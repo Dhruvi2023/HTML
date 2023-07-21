@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        header .header{
+            display: flex;
+            width: 100%;
+            background-color: blue;
+        }
+        header .left{
+            width: 49%;
+        }
+        .header .left h1{
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            margin: 10px;
+        }
+        header .right{
+             width: 49%;   
+        }
+        header .right ul{
+            list-style: none;
+            text-align: end;
+            margin: 20px 0px;
+        }
+        header .right ul li{
+            display: inline ;
+        }
+        header .right ul li a{
+            margin: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+        }
+        header .right ul li button{
+            height: 25px;
+            width: 100px;
+            border-radius: 10px;
+        }
+        /* services and dhruvi */
+        header .right ul .services{
+            position: relative;
+        }
+        header .right ul .dhruvi{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+        header .right ul .dhruvi li{
+            display: block;
+            background-color: blue;
+        }
+        header .right ul .dhruvi li a{
+            color: white;
+            text-align: center;
+        }
+        header .right ul .services:hover .dhruvi{
+            display: block;
+        }
+        /* more and khushi */
+        header .right ul .more{
+            position: relative;
+        }
+        header .right ul .khushi{
+            position: absolute;
+            top: 0px;
+            left: 80px;
+            display: none;
+        }
+        header .right ul .khushi li{
+            display: block;
+            background-color: blue;
+        }
+        header .right ul .khushi li a{
+            color: white;
+            text-align: start;
+        }
+        header .right ul .more:hover .khushi{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="left">
+                <h1>logo</h1>
+
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li class="services"><a href="">SERVICES</a>
+                        <ul class="dhruvi">
+                            <li><a href="">WebDesign</a></li>
+                            <li><a href="">Marketing</a></li>
+                            <li><a href="">Wordpress</a></li>
+                            <li class="more"><a href="">More</a>
+                                <ul class="khushi">
+                                    <li><a href="">HTML</a></li>
+                                    <li><a href="">CSS</a></li>
+                                    <li><a href="">JAVASCRIPT</a></li>
+                                    <li><a href="">jQUERY</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="" >CONTACT</a></li>
+                    <li><button>LOGIN</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
